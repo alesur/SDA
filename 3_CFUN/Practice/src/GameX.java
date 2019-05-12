@@ -6,7 +6,7 @@ import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 
 public class GameX extends JPanel implements ActionListener{
-        int x = 0, y = 0, moveBy = 10;
+        int x = 0, y = 0, moveBy = 1;
 
         Timer tm = new Timer(100, this);
 
@@ -20,8 +20,12 @@ public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
         g.setColor(Color.BLUE);
-        g.fillRect(x, y, 70, 70);
-        g.fillOval(x+70, y, 50, 50);
+      //  g.fillRect(x+50, y+50, x, y);
+        g.fillArc(x, y, x, y, y, x);
+    g.setColor(Color.RED);
+    g.fillArc(x+10, y+10, x, y, y, x);
+    g.setColor(Color.GREEN);
+    g.fillArc(x+20, y+20, x, y, y, x);
 
 
         }

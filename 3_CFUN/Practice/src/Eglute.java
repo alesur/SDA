@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Eglute {
     public static void main(String[] args) {
         int a = 10;
