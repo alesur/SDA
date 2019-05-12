@@ -70,7 +70,9 @@ class Radix {
     /*Driver function to check for above function*/
     public static void main (String[] args)
     {
-        int arr[] = {170, 45, 75, 90, 802, 24, 2, 66};
+       int arr[] = {170, 45, 75, 90, 802, 24, 2, 66};
+       // int[] arr = new (int)(Math.random() * 50 + 1);;
+
         int n = arr.length;
         radixsort(arr, n);
         print(arr, n);
