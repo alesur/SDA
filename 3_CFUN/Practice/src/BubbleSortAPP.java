@@ -1,7 +1,7 @@
 public class BubbleSortAPP {
     public static void main(String args[]) {
         // declare and allocate
-        int[] arr = new int[20];
+        int[] arr = new int[40];
 
         // fill array
         fillArray(arr);
