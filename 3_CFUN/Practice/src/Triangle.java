@@ -27,7 +27,7 @@ public class Triangle {
 
     public static void main(String[] args) {
         Triangle obj = new Triangle();
-        obj.height = 80;
+        obj.height = 10;
         obj.makeTriangle();
     }
 }
