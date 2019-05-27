@@ -7,11 +7,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class Snake extends JPanel implements KeyListener, ActionListener {
+public class BoxGame extends JPanel implements KeyListener, ActionListener {
     int x = 0, y = 0;
     int x1 = 0, y1 = 0;
 
-  //  int[] sq = new int[144];
+    //  int[] sq = new int[144];
     int presentsq = 0;
     int presentsq1 = 131;
     int animation = 0;
@@ -22,7 +22,7 @@ public class Snake extends JPanel implements KeyListener, ActionListener {
     Timer tm = new Timer(100, this);
 
 
-    public Snake() {
+    public BoxGame() {
 
         tm.start(); //start the timer ticking
         addKeyListener(this);
@@ -33,35 +33,32 @@ public class Snake extends JPanel implements KeyListener, ActionListener {
         super.paintComponent(g);
 
         g.setColor(Color.BLACK);
-        g.fillRect(200-animation, 200-animation, 149+animation*anispeed, 149+animation*anispeed);
+        g.fillRect(200 - animation, 200 - animation, 149 + animation * anispeed, 149 + animation * anispeed);
         if (x > 150 && x < 350 && y > 150 && y < 350 && x1 > 150 && x1 < 350 && y1 > 150 && y1 < 350) {
             g.setColor(Color.GREEN);
             animation++;
 
-            if (animation >= 10){
+            if (animation >= 10) {
                 animation = 0;
             }
 
-        }
-        else if (x > 150 && x < 350 && y > 150 && y < 350){
+        } else if (x > 150 && x < 350 && y > 150 && y < 350) {
             g.setColor(Color.BLUE);
-        }
-        else if (x1 > 150 && x1 < 350 && y1 > 150 && y1 < 350) {
+        } else if (x1 > 150 && x1 < 350 && y1 > 150 && y1 < 350) {
 
             g.setColor(Color.RED);
-        }
-        else {
+        } else {
             g.setColor(Color.WHITE);
         }
 
 
-        g.fillRect(210-animation, 210-animation, 129+animation*anispeed, 129+animation*anispeed);
+        g.fillRect(210 - animation, 210 - animation, 129 + animation * anispeed, 129 + animation * anispeed);
         g.setColor(Color.BLACK);
         g.setFont(new Font("TimesRoman", Font.PLAIN, 30));
         g.drawString("" + animation, 265, 290);
         g.setColor(Color.BLACK);
         g.setFont(new Font("TimesRoman", Font.PLAIN, 30));
-        g.drawString("Highest score is:" + score, 170, 30 );
+        g.drawString("Highest score is:" + score, 170, 30);
         g.setColor(Color.BLUE);
         g.fillRect(x, y, 50, 50);
         g.setColor(Color.BLACK);
@@ -147,7 +144,7 @@ public class Snake extends JPanel implements KeyListener, ActionListener {
 
         JFrame jf = new JFrame();
 
-        Snake g1 = new Snake();
+        BoxGame g1 = new BoxGame();
         jf.add(g1);
 
         jf.setTitle("My Game");
