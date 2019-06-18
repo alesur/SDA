@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
+
 public class ArrayListx {
 
     public static void main(String[] args) {
@@ -65,7 +66,7 @@ public class ArrayListx {
         System.out.println("===================");
 
         for(String s : letters){
-            System.out.println(s);
+            System.out.println("++ " + s);
         }
         System.out.println("===================");
 
@@ -77,6 +78,7 @@ public class ArrayListx {
 
         letters.clear();
         System.out.println(letters);
+        {}
 
 
     }

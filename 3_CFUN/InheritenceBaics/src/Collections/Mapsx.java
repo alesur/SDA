@@ -7,24 +7,29 @@ import java.util.Set;
 
 public class Mapsx {
     public static void main(String[] args) {
-        Map m =new HashMap();
+        Map m = new HashMap();
         //Adding elements to map
-        m.put(1,"Yo");
-        m.put(5,"Man");
-        m.put(2,"AAA");
-        m.put(6,"XYZZ");
-        m.put("Yohan",66);
-        m.put("str",19);
-        m.put(6,"abcde");//wont be added
-        m.put("Yohan", 55);//wont be added
+        m.put(1, "Yo");
+        m.put(5, "Man");
+        m.put(2, "AAA");
+        m.put(101,"A");
+        m.put(6, "XYZZ");
+        m.put("Yohan", 66);
+        m.put("str", 19);
+        m.put(6, "abcde");//wont be added
+        m.put("Yohanz", 19);//wont be added
+        m.put("Yohanzx", 19);//wont be added
+        m.put(1, "BAO");//wont be added
+        m.put("BAOZ", 1);//wont be added
         System.out.println(m);
         System.out.println("====================1");
 
-        Map<String,Integer> student = new HashMap<>();
-        student.put("Yohan",66);
-        student.put("Mr.A",89);
-        student.put("BBB",27);
-        student.put("xyz",19);
+        Map<String, Integer> student = new HashMap<>();
+        student.put("Yohan", 66);
+        student.put("Mr.A", 89);
+        student.put("BBB", 27);
+        student.put("xyz", 19);
+        student.put("xyzz", 19);
         System.out.println(student);
         System.out.println("====================2");
 
@@ -53,14 +58,13 @@ public class Mapsx {
         System.out.println("====================5");
 
         Map<Integer, String> customer = new HashMap<>();
-        if(customer==null){
+        if (customer == null) {
             System.out.println("NO CUSTOMERS....");
-        }
-        else {
+        } else {
             System.out.println("Yes! Customers are there!");
         }
 
-        if(customer.isEmpty()){
+        if (customer.isEmpty()) {
             System.out.println("NO CUSTOMERS.... from isEmpty()");
         }
         System.out.println("====================6");
@@ -75,9 +79,9 @@ public class Mapsx {
         Set set = student.entrySet();//Converting to Set
         Iterator i = set.iterator();//get iterator from set
 
-        while(i.hasNext()){
-            Map.Entry entry=(Map.Entry)i.next();//get each "element" or "entry"  from the iterator
-            System.out.println(entry.getKey() + " | " +entry.getValue());
+        while (i.hasNext()) {
+            Map.Entry entry = (Map.Entry) i.next();//get each "element" or "entry"  from the iterator
+            System.out.println(entry.getKey() + " | " + entry.getValue());
         }
 
     }

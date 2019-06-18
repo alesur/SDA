@@ -18,4 +18,8 @@ public class Movies {
     public int getLength() {
         return length;
     }
+
+    public String getGenre() {
+        return genre;
+    }
 }

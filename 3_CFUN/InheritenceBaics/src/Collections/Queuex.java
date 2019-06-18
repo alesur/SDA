@@ -20,6 +20,7 @@ public class Queuex {
         System.out.println(q.size());
         System.out.println("=====================0");
 
+
         System.out.println("head: " + q.peek());
         System.out.println("Tail: " + ((LinkedList<String>) q).peekLast());
         System.out.println("=====================1");

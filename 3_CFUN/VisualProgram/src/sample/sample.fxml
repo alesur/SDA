@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="361.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="btn" layoutX="100.0" layoutY="54.0" mnemonicParsing="false" onAction="#btn_Click" prefHeight="115.0" prefWidth="128.0" text="Push the Tempo" />
+      <Button fx:id="ok" layoutX="269.0" layoutY="54.0" mnemonicParsing="false" onAction="#ok_Click" prefHeight="115.0" prefWidth="128.0" text="OK">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="txtf" layoutX="41.0" layoutY="223.0" />
+      <TextArea fx:id="txta" layoutX="287.0" layoutY="208.0" prefHeight="92.0" prefWidth="207.0" />
+      <TextField fx:id="txtf2" layoutX="41.0" layoutY="269.0" onKeyReleased="#AnyKeyInput" />
+      <Button layoutX="287.0" layoutY="300.0" mnemonicParsing="false" onAction="#DeleteText" text="Delete" />
+   </children>
+</AnchorPane>

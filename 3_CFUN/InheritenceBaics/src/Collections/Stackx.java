@@ -13,12 +13,14 @@ public class Stackx {
         s.push(11);
         s.push(47);
         s.push(34);
-        System.out.println(s);
+        s.push(5);
+    System.out.println(s);
         System.out.println(s.size());
         System.out.println("Top Most is: " + s.peek());
         System.out.println("=====================0");
 
         Integer popVal = s.pop();
+        popVal=s.pop();
         System.out.println("popped value: " + popVal);
         System.out.println(s);
         System.out.println(s.size());

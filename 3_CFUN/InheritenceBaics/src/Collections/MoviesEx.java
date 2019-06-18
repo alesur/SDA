@@ -2,6 +2,7 @@ package Collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class MoviesEx {
@@ -24,24 +25,37 @@ public class MoviesEx {
         moviesList.add(m3);
         moviesList.add(m4);
         printMovieList(moviesList);
-        System.out.println("=============================");
+        System.out.println("=============================1");
 
         //Collections.sort(moviesList);//error
-        MovieComparatorName compareOnName = new MovieComparatorName();
-        Collections.sort(moviesList,compareOnName);
-        printMovieList(moviesList);
-        System.out.println("=============================");
+      //  MovieComparatorName compareOnName = new MovieComparatorName();
+        //Collections.sort(moviesList,compareOnName);
+       // Collections.sort(Movies.name)
+      //  List.sort(Comparator.comparing(Person::getName));
 
-        Movies m5 = new Movies("He Man","Animation",120);
+        moviesList.sort(Comparator.comparing(Movies::getName));
+
+        printMovieList(moviesList);
+        System.out.println("============================= Sorted by Name");
+
+       Movies m5 = new Movies("He Man","Animation",120);
         moviesList.add(m5);
         printMovieList(moviesList);
-        System.out.println("=============================");
+        System.out.println("============================= Added new Animation");
 
-        MoviesComparatorLen compareOnLen = new MoviesComparatorLen();
-        Collections.sort(moviesList,compareOnLen);
+       // MoviesComparatorLen compareOnLen = new MoviesComparatorLen();
+      //  Collections.sort(moviesList,compareOnLen);
         // Collections.sort(moviesList,compareOnLen.reversed());//for reverse
+
+        moviesList.sort(Comparator.comparing(Movies::getLength));
+
         printMovieList(moviesList);
-        System.out.println("=============================");
+        System.out.println("============================= Sorted by lenght");
+
+        moviesList.sort(Comparator.comparing(Movies::getGenre));
+
+        printMovieList(moviesList);
+        System.out.println("============================= Sorted by Genre");
 
 
 
