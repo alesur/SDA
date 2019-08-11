@@ -1,6 +1,6 @@
-package HotDogFactory.FoodBuilder.VegetablesType;
+package FastFoodFactory.FoodBuilder.Ingredients.VegetablesType;
 
-import HotDogFactory.FoodBuilder.TextLine;
+import FastFoodFactory.FoodBuilder.TextLine;
 
 public class Tomatoe implements Vegetables {
 

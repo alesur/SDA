@@ -1,6 +1,6 @@
-package HotDogFactory.FoodBuilder.SausageType;
+package FastFoodFactory.FoodBuilder.Ingredients.SausageType;
 
-import HotDogFactory.FoodBuilder.TextLine;
+import FastFoodFactory.FoodBuilder.TextLine;
 
 public class Chicken implements Sausage {
 

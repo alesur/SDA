@@ -1,4 +1,4 @@
-package HotDogFactory.FoodBuilder.VegetablesType;
+package FastFoodFactory.FoodBuilder.Ingredients.VegetablesType;
 
 public interface Vegetables {
     String getVegetables();
